@@ -20,8 +20,8 @@ class Item(BaseModel):
 def create_message(item: Item) -> str:
 
     names_map = {
-        "HannibalMk": "Marcos",
-        "iFertz": "Fernando",
+        "HannibalMk": "jmarcosmn",
+        "iFertz": "ifertz",
         "Renato Shimizu": "VictorShimizu",
         "joseleijr": "Joselei",
     }
