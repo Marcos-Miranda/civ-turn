@@ -22,7 +22,7 @@ def create_message(item: Item) -> str:
     names_map = {
         "HannibalMk": "Marcos",
         "iFertz": "Fernando",
-        "Renato Shimizu": "Victor Shimizu",
+        "Renato Shimizu": "VictorShimizu",
         "joseleijr": "Joselei",
     }
     if item.value2 in names_map:
