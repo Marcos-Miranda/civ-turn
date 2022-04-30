@@ -20,14 +20,17 @@ class Item(BaseModel):
 def create_message(item: Item) -> str:
 
     names_map = {
-        "Hanniball": "Marcos",
+        "HannibalMk": "Marcos",
         "iFertz": "Fernando",
-        "Renato": "Victor",
-        "cjos": "Joselei",
+        "Renato Shimizu": "Victor Shimizu",
+        "joseleijr": "Joselei",
     }
+    if item.value2 in names_map:
+        tele_name = names_map[item.value2]
+    else:
+        tele_name = item.value2
 
-    msg = f"@{names_map[item.value2]}, é o seu turno ({item.value3}) no game {item.value1}!"
-    return msg
+    return f"@{tele_name}, é o seu turno ({item.value3}) no game {item.value1}!"
 
 
 def send_telegram_msg(msg: str) -> requests.Response:
