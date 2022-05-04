@@ -23,7 +23,7 @@ def create_message(item: Item) -> str:
         "HannibalMk": "jmarcosmn",
         "iFertz": "ifertz",
         "Renato Shimizu": "VictorShimizu",
-        "joseleijr": "cjoseleijr",
+        "cjosjr": "cjoseleijr",
     }
     if item.value2 in names_map:
         tele_name = names_map[item.value2]
